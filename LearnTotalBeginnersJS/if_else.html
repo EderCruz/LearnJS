@@ -5,7 +5,7 @@
 <head>
 	<meta charset = "utf-8">
 
-	<title>Are you speeding? - JS Beginner Cap 4</title>
+	<title>More Complex - JS Beginner Cap 4</title>
 
 	<style>
 
@@ -16,19 +16,21 @@
 <body>
 
 	<script>
-        let speedLimit = 55;
+        let xPos = 300;
+		let yPos = 100;
 		
-		function amISpeeding(speed) {
-            if (speed > speedLimit) {
-				alert("Yes. You Are Speending.");
-            } else{
-				alert("No. You are not Speending. What's wrong with you?");
-			}
+		function sendWarning(x, y) {
+			if ( (x < xPos) && (y < yPos)) {
+                alert("Adjust the position");
+            } else {
+                alert("Things are fine");
+            }
+            //code
         }
 		
-		amISpeeding(53);
-		amISpeeding(72);
-
+		sendWarning(500, 160);
+		sendWarning(100, 99);
+		sendWarning(201, 149);
 	</script>
 	
 	
