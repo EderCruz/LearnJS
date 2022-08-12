@@ -1,2 +1,2 @@
 # LearnJS
-Repository for to Learn Java Script
+Repository to Learn Java Script
