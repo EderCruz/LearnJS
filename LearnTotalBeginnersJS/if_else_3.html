@@ -16,23 +16,20 @@
 <body>
 
 	<script>
-        let safeToProceed = true;
+        let speedLimit = 55;
         
-        if (safeToProceed) {
-            alert("You shall Pass");
-        } else {
-            alert("You shall not Pass");
-        }
-        
-		alert("Agora o False");
+		function amISpeeding(speed) {
+			if (speed >= speedLimit) {
+				alert("Yes. You are speeding.");
+            } else {
+				alert("No. You are not speeding. What's wrong with you?");
+			}
+		}
 		
-		safeToProceed = false;
-        
-        if (safeToProceed) {
-            alert("You shall Pass");
-        } else {
-            alert("You shall not Pass");
-        }
+		amISpeeding(53);
+		amISpeeding(72);
+            
+
 	</script>
 	
 	
